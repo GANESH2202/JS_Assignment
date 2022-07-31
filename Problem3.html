@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Problem3.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body>
+
+    <header>ID CARDS GENRATOR</header>
+   
+    <div class="container">
+         
+        <form>
+            <label for="fname"> ENTER NAME:</label><br>
+            <input type="text" id="Cardname" name="fname" value=""><br><br>
+            <label for="fname">ENTER COLLEGE NAME:</label><br>
+            <input type="text" id="Collegename" name="fname" value=""><br><br> 
+            <label for="fname"> ENTER LOCATION:</label><br>
+            <input type="text" id="Locationname" name="fname" value=""><br><br>
+            <label for="fname"> ENTER STUDENT PHOTO:</label><br>
+
+            <button  onclick="choosefile()">choose File</button> <br><br>
+
+
+            <input type="image" src=""  width="100px" height="80px"><br><br>
+            
+            <button onclick="generateCard()"> GENERATE CARD</button>
+        </form> 
+        
+
+        <div class="section-container">
+            <div class="id-card-container" id="collegeCard">
+                <div class="text-center">
+                    GENERATE CARD
+                </div>
+                <div class="card-container">
+                    <div class="card-wrapper">
+                        <div class="user-card">
+                            <span class="user-photo">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </div>
+                        <div class="general-information">
+                        <div class="card-element card-name">
+                            <span>Name:</span>
+                            <span id="cardName"></span>
+                        </div>
+                        <div class="card-element college-name">
+                            <span>College Name:</span>
+                            <span id="cardCollegeName"></span>
+                        </div>
+                        <div class="card-element college-name">
+                            <span>Location:</span>
+                            <span id="cardLocation"></span>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+    </div>
+
+
+
+
+
+
+    <script src="Problem3.js"></script>
+</body>
+</html>
